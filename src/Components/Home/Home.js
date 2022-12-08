@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header/Header';
+import Menu from './MenuList/Menu';
 import Navber from './Navber/Navber';
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
             <Navber></Navber>
             <Header></Header>
+            <Menu></Menu>
         </div>
     );
 };
