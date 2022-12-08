@@ -1,3 +1,18 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
 .green {
     color:#27A365;
+}
+.opacity{
+    opacity: 0.9;
+}
+.header-title{
+    position: relative;
+}
+.headerTitle-Position{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
 }
