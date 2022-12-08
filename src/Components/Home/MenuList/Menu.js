@@ -1,4 +1,6 @@
 import React from 'react';
+import { UserGroupIcon } from '@heroicons/react/24/solid'
+import '../../../App.css'
 
 const Menu = () => {
     return (
@@ -35,7 +37,7 @@ const Menu = () => {
                                     </button>
 
                                 </div>
-                                <button class="btn btn-primary">Join Group</button>
+                                <button class="btn btn-primary"> <span><UserGroupIcon className='icon me-2 mb-1'></UserGroupIcon> </span> Join Group</button>
                             </div>
                         </div>
                     </div>

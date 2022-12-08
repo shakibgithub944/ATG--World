@@ -13,6 +13,10 @@
 }
 .headerTitle-Position{
     position: absolute;
-    bottom: 15%;
-    left: 10%;
+    bottom: 10%;
+    left: 17%;
+}
+.icon{
+    height: 18px;
+    width: 18px;
 }

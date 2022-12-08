@@ -14,12 +14,11 @@ const Header = () => {
                         <p className='text-white'>142,756 Computer engineers follow this </p>
                     </div>
                 </div>
-                {/* <div class="card bg-dark text-white">
-                    <img src="..." class="card-img" alt="..."/>
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text">Last updated 3 mins ago</p>
+
+                {/* <div className="card text-white my-5 p-0">
+                    <img src={headerImg} className="card-img" alt="..."/>
+                        <div className="card-img-overlay">
+                            <h5 className="card-title">Card title</h5>
                         </div>
                 </div> */}
 
