@@ -6,7 +6,6 @@ const Menu = () => {
     return (
         <div className='container my-5'>
             <div className="row">
-
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +34,6 @@ const Menu = () => {
                                     <button className="btn btn-outline-secondary dropdown-toggle">
                                         <span className='fw-bold text-black'>Write a post</span>
                                     </button>
-
                                 </div>
                                 <button class="btn btn-primary"> <span><UserGroupIcon className='icon me-2 mb-1'></UserGroupIcon> </span> Join Group</button>
                             </div>
