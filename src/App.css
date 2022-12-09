@@ -1,51 +1,70 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
 }
-.headerImg{
+
+.headerImg {
     height: 50vh;
 }
+
 .green {
-    color:#27A365;
+    color: #27A365;
 }
-.light{
+
+.light {
     background-color: #DEE2E6;
     border: 1px solid #CED4DA;
 }
-.loginBorder{
+
+.loginBorder {
     border: 1px solid #CED4DA;
 }
-.opacity{
-    opacity: 0.9;
+
+.imgOverlay::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5);
 }
-.header-title{
+
+.header-title {
     position: relative;
 }
-.headerTitle-Position{
+
+.headerTitle-Position {
     position: absolute;
     bottom: 10%;
-    left: 17%;
+    left: 10%;
 }
-.headerButton{
-    position:absolute;
+
+.headerButton {
+    position: absolute;
     top: 2%;
 }
-.icon{
+
+.icon {
     height: 18px;
     width: 18px;
 }
-.modall{
+
+.modall {
     position: relative;
 }
-.modalClose{
-    position:absolute;
+
+.modalClose {
+    position: absolute;
     top: -20px;
     right: -10px;
 }
-.editIcon{
+
+.editIcon {
     width: 30px;
     height: 30px;
     color: white;
     text-align: center;
-    background:#FF6B6B;
+    background: #FF6B6B;
 }
