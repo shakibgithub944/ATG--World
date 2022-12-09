@@ -1,8 +1,10 @@
-import React from 'react';
-import { UserGroupIcon } from '@heroicons/react/24/solid'
+import React, { useContext } from 'react';
+import { ArrowRightOnRectangleIcon, UserGroupIcon } from '@heroicons/react/24/solid'
 import '../../../App.css'
+import { AuthProvider } from '../../../UserContext/UserContext';
 
 const Menu = () => {
+    const { user } = useContext(AuthProvider)
     return (
         <div className='container my-5'>
             <div className="row">
@@ -35,7 +37,11 @@ const Menu = () => {
                                         <span className='fw-bold text-black'>Write a post</span>
                                     </button>
                                 </div>
-                                <button class="btn btn-primary"> <span><UserGroupIcon className='icon me-2 mb-1'></UserGroupIcon> </span> Join Group</button>
+
+                                {user?.uid ? <button class="btn btn-outline-secondary"> <span><ArrowRightOnRectangleIcon className='icon me-2 mb-1'></ArrowRightOnRectangleIcon></span>Leave Group</button>
+
+                                    : <button class="btn btn-primary"> <span><UserGroupIcon className='icon me-2 mb-1'></UserGroupIcon> </span> Join Group</button>
+                                }
                             </div>
                         </div>
                     </div>

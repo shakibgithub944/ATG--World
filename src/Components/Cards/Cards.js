@@ -1,5 +1,6 @@
-import { CalendarIcon, EyeIcon, EyeSlashIcon, ShareIcon } from '@heroicons/react/24/solid';
+import { CalendarIcon, EllipsisHorizontalIcon, EyeIcon, LockClosedIcon, MapIcon, MapPinIcon, ShareIcon } from '@heroicons/react/24/solid';
 import React from 'react';
+import RightSide from './RightSide';
 
 const Cards = () => {
 
@@ -52,21 +53,26 @@ const Cards = () => {
     ]
 
     return (
-        <div className='container'>
+        <div className='container '>
             <div className="row">
                 <div className=" col-sm-12 col-lg-8">
                     {
-                        cards.map(card => <div class="card mb-3">
+                        cards.map(card => <div
+                            key={card.caption}
+                            className="card mb-3">
                             {
-                                card?.img ? <img src={`${card.img}`} class="card-img-top" alt="..." /> : ''
+                                card?.img ? <img src={`${card.img}`} className="card-img-top" alt="..." /> : ''
                             }
-                            <div class="card-body">
-                                <h6 class="card-title">
+                            <div className="card-body">
+                                <h6 className="card-title">
                                     <img src={card.Icon} className='mb-2 me-1' style={{ height: '15px' }} alt="" />
                                     {card.caption}
                                 </h6>
-                                <h5>{card.title}</h5>
-                                <p class="card-text text-muted">{card.subTitle}</p>
+                                <div className='d-flex align-items-center justify-content-between'>
+                                    <h5>{card.title}</h5>
+                                    <span className=''><EllipsisHorizontalIcon style={{ height: '30px' }}></EllipsisHorizontalIcon></span>
+                                </div>
+                                <p className="card-text text-muted">{card.subTitle}</p>
 
                                 {
                                     card?.date && <><div
@@ -75,14 +81,14 @@ const Cards = () => {
                                             <span className='me-1'><CalendarIcon style={{ height: '15px' }}></CalendarIcon></span>
                                             {card.date}
                                         </h6>
-                                        <h6>{card.location}</h6>
+                                        <h6 className='d-flex align-items-center'><MapPinIcon style={{ height: '15px', marginRight: '5px' }}></MapPinIcon>{card.location}</h6>
 
                                     </div>
-                                        <p className='btn btn-outline-secondary w-100 '>{card.visitButton}</p>
+                                        <p className='btn btn-outline-secondary w-100 my-2'>{card.visitButton}</p>
                                     </>
                                 }
 
-                                <div className='d-flex align-items-center justify-content-between'>
+                                <div className='d-flex align-items-center justify-content-between mt-3'>
                                     <div className='d-flex align-items-center'>
                                         <img src={card.ownerImg} alt="" />
                                         <h5 className='ms-3'>{card.name}</h5>
@@ -97,8 +103,8 @@ const Cards = () => {
                         </div>)
                     }
                 </div>
-                <div className="col-sm-12 col-lg-4">
-                    <h1>right side</h1>
+                <div className="col-sm-12 col-lg-4 d-none d-lg-block">
+                    <RightSide></RightSide>
                 </div>
             </div>
         </div>

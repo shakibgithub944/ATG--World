@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../../../App.css'
 import logo from '../../../assets/image (4).png'
+import { AuthProvider } from '../../../UserContext/UserContext';
 
 const Navber = () => {
+    const { user, logOutUser } = useContext(AuthProvider)
+
+    const handleLogout = () => {
+        logOutUser()
+            .then(result => console.log(result.user))
+            .catch(err => console.log(err.message))
+
+    }
+
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-light">
@@ -13,11 +23,23 @@ const Navber = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <input className="form-control me-2 rounded-pill" style={{ width: '360px' }} type="search" placeholder="Search" aria-label="Search" />
+                            <input className="form-control me-2 rounded-pill" style={{ width: '360px' }} type="search" placeholder="Search for your favorite group in ATG" aria-label="Search" />
                         </ul>
 
                         <div className="">
-                            <p className='fw-bold'>Create account <span className='text-primary'>It's free</span></p>
+                            {
+                                user?.uid ? <div className="dropdown">
+                                    <span className="btn dropdown-toggle fw-bold" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        {user?.email}
+                                    </span>
+                                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li onClick={handleLogout}><span className="dropdown-item">LogOut</span></li>
+                                    </ul>
+                                </div>
+
+                                    : <p data-bs-toggle="modal" href="#exampleModalToggle" className='fw-bold'>Create account <span className='text-primary'>It's free</span></p>
+                            }
+
                         </div>
                     </div>
                 </div>

@@ -2,8 +2,18 @@
     padding: 0%;
     margin: 0%;
 }
+.headerImg{
+    height: 50vh;
+}
 .green {
     color:#27A365;
+}
+.light{
+    background-color: #DEE2E6;
+    border: 1px solid #CED4DA;
+}
+.loginBorder{
+    border: 1px solid #CED4DA;
 }
 .opacity{
     opacity: 0.9;
@@ -16,7 +26,26 @@
     bottom: 10%;
     left: 17%;
 }
+.headerButton{
+    position:absolute;
+    top: 2%;
+}
 .icon{
     height: 18px;
     width: 18px;
+}
+.modall{
+    position: relative;
+}
+.modalClose{
+    position:absolute;
+    top: -20px;
+    right: -10px;
+}
+.editIcon{
+    width: 30px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    background:#FF6B6B;
 }
