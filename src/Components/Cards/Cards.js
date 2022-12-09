@@ -94,9 +94,10 @@ const Cards = () => {
                                         <h5 className='ms-3'>{card.name}</h5>
                                     </div>
                                     <div className='d-flex text-muted '>
-                                        <span><EyeIcon style={{ height: '15px' }}></EyeIcon></span>
-                                        <p className='fw-bold ms-2 me-4'>{card.view}</p>
+                                        <span className='mx-3 d-none d-lg-block'><EyeIcon style={{ height: '15px' }}></EyeIcon></span>
+                                        <p className='fw-bold ms-2 me-4 d-none d-lg-block'>{card.view}</p>
                                         <span ><ShareIcon style={{ height: '15px' }}></ShareIcon></span>
+                                        <p className='fw-bold ms-2 me-4 d-sm-block d-lg-none'>Share</p>
                                     </div>
                                 </div>
                             </div>

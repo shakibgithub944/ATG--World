@@ -74,7 +74,10 @@ const LoginModal = () => {
                                             </div>
                                             <div className="row p-0 m-0">
                                                 <input className='p-2 light' placeholder='Email' type="email" name="email" id="" />
-                                                <input className='p-2 light' placeholder='Password' type="password" name="password" id="" />
+                                                <div className='px-0 position-relative'>
+                                                    <span className='position-absolute top-0 end-0 me-2 mt-2 text-muted'><i class="bi bi-eye"></i></span>
+                                                    <input className='p-2 light w-100' placeholder='Password' type="password" name="password" id="" />
+                                                </div>
                                                 <input className='p-2 light' placeholder='Confirm Password' type="password" name="" id="" />
                                                 <input className='d-none d-lg-block p-2 my-4 fw-bold text-center bg-primary text-white text-center rounded-pill loginBorder w-100' value={'Create Account'} type="submit" name="" id="" />
 
@@ -90,7 +93,7 @@ const LoginModal = () => {
                                             <p className='mb-0 p-2 fw-bold '>Sign In with facebook</p>
                                         </div>
                                         <div className='text-center loginBorder w-100 d-flex align-items-center justify-content-center'>
-                                            <span><img src={googleIcon}style={{ height: '16px' }} alt="" /></span>
+                                            <span><img src={googleIcon} style={{ height: '16px' }} alt="" /></span>
                                             <p className='mb-0 p-2 fw-bold '>Sign In with google</p>
                                         </div>
                                     </div>
@@ -124,7 +127,10 @@ const LoginModal = () => {
                                         <form onSubmit={handleSignIn}>
                                             <div className="row p-0 m-0">
                                                 <input className='p-2 light' placeholder='Email' type="email" name="email" id="" />
-                                                <input className='p-2 light' placeholder='Password' type="password" name="password" id="" />
+                                                <div className='px-0 position-relative'>
+                                                    <span className='position-absolute top-0 end-0 me-2 mt-2 text-muted'><i class="bi bi-eye"></i></span>
+                                                    <input className='p-2 light w-100' placeholder='Password' type="password" name="password" id="" />
+                                                </div>
                                                 <input className='d-none d-lg-block my-4 p-2 fw-bold bg-primary text-center text-white rounded-pill loginBorder' value={'Sign in'} type="submit" />
 
                                                 <div className='d-lg-none d-sm-block d-flex align-items-center justify-content-between'>
@@ -139,7 +145,7 @@ const LoginModal = () => {
                                             <p className='mb-0 p-2 fw-bold '>Sign In with facebook</p>
                                         </div>
                                         <div className='text-center loginBorder w-100 d-flex align-items-center justify-content-center'>
-                                            <span><img src={googleIcon}style={{ height: '16px' }} alt="" /></span>
+                                            <span><img src={googleIcon} style={{ height: '16px' }} alt="" /></span>
                                             <p className='mb-0 p-2 fw-bold '>Sign In with google</p>
                                         </div>
 

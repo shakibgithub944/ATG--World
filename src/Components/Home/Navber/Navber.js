@@ -23,7 +23,7 @@ const Navber = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <span style={{marginRight:'-20px',zIndex:'1000',marginTop:'5px'}}><i className="bi bi-search"></i></span>
+                            <span style={{ marginRight: '-20px', zIndex: '1000', marginTop: '5px' }}><i className="bi bi-search"></i></span>
                             <input className="form-control me-2 ps-4 rounded-pill" style={{ width: '360px' }} type="search" placeholder="Search for your favorite group in ATG" aria-label="Search" />
                         </ul>
 
