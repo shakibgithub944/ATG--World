@@ -15,8 +15,8 @@ const Home = () => {
             <Menu></Menu>
             <Cards></Cards>
             <LoginModal></LoginModal>
-            <div className=' text-end fixed-bottom m-5 d-lg-none d-sm-block'>
-                <PencilIcon className='' style={{ height: '25px'}}>
+            <div className='position-absolute text-center bottom-0 end-0 d-lg-none d-sm-block m-4' style={{width:'60px', height:'60px',color:'white',backgroundColor:'#FF6B6B',borderRadius:'50%'}}>
+                <PencilIcon className='' style={{ height: '25px',marginTop:'15px'}}>
                 </PencilIcon>
             </div>
         </div>
