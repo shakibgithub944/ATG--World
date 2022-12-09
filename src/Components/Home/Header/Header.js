@@ -29,21 +29,11 @@ const Header = () => {
                             }
                         </div>
                     </div>
-
                     <div className='headerTitle-Position'>
                         <h2 className='text-white'>Computer Engineering</h2>
                         <p className='text-white'>142,756 Computer engineers follow this </p>
                     </div>
                 </div>
-
-                {/* <div className="card text-white my-5 p-0">
-                    <img src={headerImg} className="card-img" alt="..."/>
-                        <div className="card-img-overlay">
-                            <h5 className="card-title">Card title</h5>
-                        </div>
-                </div> */}
-
-
             </div>
         </div>
     );

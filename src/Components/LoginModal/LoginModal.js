@@ -79,7 +79,7 @@ const LoginModal = () => {
                                                     <input className='p-2 light w-100' placeholder='Password' type="password" name="password" id="" />
                                                 </div>
                                                 <input className='p-2 light' placeholder='Confirm Password' type="password" name="" id="" />
-                                                <input className='d-none d-lg-block p-2 my-4 fw-bold text-center bg-primary text-white text-center rounded-pill loginBorder w-100' value={'Create Account'} type="submit" name="" id="" />
+                                                <input className='d-none d-lg-block p-2 my-4 fw-bold text-center bg-primary text-white text-center rounded-pill loginBorder w-100'  value={'Create Account'} type="submit" name="" id="" />
 
                                                 <div className='d-lg-none d-sm-block d-flex align-items-center justify-content-between my-2'>
                                                     <input className='p-2 my-3 fw-bold text-center bg-primary text-white text-center rounded-pill loginBorder w-50' value={'Create Account'} type="submit" name="" id="" />
@@ -131,10 +131,10 @@ const LoginModal = () => {
                                                     <span className='position-absolute top-0 end-0 me-2 mt-2 text-muted'><i class="bi bi-eye"></i></span>
                                                     <input className='p-2 light w-100' placeholder='Password' type="password" name="password" id="" />
                                                 </div>
-                                                <input className='d-none d-lg-block my-4 p-2 fw-bold bg-primary text-center text-white rounded-pill loginBorder' value={'Sign in'} type="submit" />
+                                                <input className='d-none d-lg-block my-4 p-2 fw-bold bg-primary text-center text-white rounded-pill loginBorder'data-bs-dismiss="modal" value={'Sign in'} type="submit" />
 
                                                 <div className='d-lg-none d-sm-block d-flex align-items-center justify-content-between'>
-                                                    <input className='p-2 my-4 fw-bold text-center bg-primary text-white text-center rounded-pill loginBorder w-50' value={'Sign In'} type="submit" name="" id="" />
+                                                    <input className='p-2 my-4 fw-bold text-center bg-primary text-white text-center rounded-pill loginBorder w-50'data-bs-dismiss="modal" value={'Sign In'} type="submit" name="" id="" />
                                                     <p className='' data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">or,Create account</p>
                                                 </div>
 

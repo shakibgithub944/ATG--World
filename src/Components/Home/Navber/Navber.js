@@ -1,3 +1,4 @@
+import { UserCircleIcon } from '@heroicons/react/24/solid';
 import React, { useContext } from 'react';
 import '../../../App.css'
 import logo from '../../../assets/image (4).png'
@@ -31,7 +32,9 @@ const Navber = () => {
                             {
                                 user?.uid ? <div className="dropdown">
                                     <span className="btn dropdown-toggle fw-bold" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <UserCircleIcon  style={{ height: '30px',marginRight:'8px' }}></UserCircleIcon>
                                         {user?.email}
+
                                     </span>
                                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                         <li onClick={handleLogout}><span className="dropdown-item">LogOut</span></li>
